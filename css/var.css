@@ -1,0 +1,17 @@
+/* var declare */
+
+:root {
+  --logo: white;
+  --logo_bg: rgba(0, 0, 0, 0.95);
+
+  --content: black;
+  --content_bg: rgba(255, 255, 255, 0.5);
+
+  --foot: white;
+  --foot_bg: rgba(0, 0, 0, 0.95);
+
+}
+
+form{
+  --columns: auto auto auto auto;
+}

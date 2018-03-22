@@ -1,0 +1,107 @@
+/*--------------------- DEVICES ----------------------------*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px)
+                   and (max-device-width : 480px) {
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px)
+                   and (max-device-width : 1024px) {
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px)
+                   and (max-device-width : 1024px)
+                   and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px)
+                   and (max-device-width : 1024px)
+                   and (orientation : portrait) {
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+  h1{
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* Large screens ----------- */
+/*@media only screen and (min-width : 1824px) {
+  h1{
+    padding: 30px;
+    margin: 0;
+  }
+} */
+
+/*--------------------- GRIDS ----------------------------*/
+.container {
+  height: 100%;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: auto;
+  grid-template-rows: 40px auto 40px;
+  grid-template-areas: "h"
+                       "c"
+                       "f";
+}
+
+#logo{
+  display: flex;
+  grid-area: h;
+}
+
+#content{
+  display: grid;
+  grid-area: c;
+  margin:0;
+  padding: 0;
+}
+
+#footer{
+  grid-area: f;
+}
+
+form{
+  height: 100%;
+  display: grid;
+	grid-template-columns: repeat(5, [col] auto);
+	grid-template-rows: repeat(3, [row] 100px);
+}
+
+#subForm1{
+  display: grid;
+  grid-column: col 1 / span 5;
+  grid-row: row 1;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+#subForm2{
+  display: grid;
+  grid-column: col 1 / span 5;
+	grid-row: row 2;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#subform3{
+  display: grid;
+  grid-column: col 1 / span 5;
+	grid-row: row 3;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
