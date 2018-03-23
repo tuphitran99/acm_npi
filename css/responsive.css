@@ -68,7 +68,7 @@
   grid-area: h;
 }
 
-#content{
+.content{
   display: grid;
   grid-area: c;
   margin:0;
@@ -83,25 +83,26 @@ form{
   height: 100%;
   display: grid;
 	grid-template-columns: repeat(5, [col] auto);
-	grid-template-rows: repeat(3, [row] 100px);
+	grid-template-rows: repeat(3, [row] 200px);
 }
 
 #subForm1{
   display: grid;
-  grid-column: col 1 / span 5;
+  grid-gap: 10px;
   grid-row: row 1;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 #subForm2{
   display: grid;
-  grid-column: col 1 / span 5;
+  grid-gap: 10px;
 	grid-row: row 2;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 #subform3{
   display: grid;
+  grid-gap: 10px;
   grid-column: col 1 / span 5;
 	grid-row: row 3;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
