@@ -37,10 +37,7 @@
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
-  h1{
-    padding: 0;
-    margin: 0;
-  }
+
 }
 
 /* Large screens ----------- */
@@ -90,19 +87,19 @@ form{
   display: grid;
   grid-gap: 10px;
   grid-row: row 1;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 #subForm2{
   display: grid;
   grid-gap: 10px;
 	grid-row: row 2;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 #subform3{
   display: grid;
   grid-gap: 10px;
   grid-column: col 1 / span 5;
 	grid-row: row 3;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
